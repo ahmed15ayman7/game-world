@@ -44,10 +44,10 @@ import { games } from "../redux/games";
                 key={i}
                 style={{ justifyContent: "space-evenly", alignItems: "center" }}
                 className="minicarocel">
-                <Col lg={4} md={5} sm={6}>
+                <Col lg={4} md={5} sm={6} className='text-center'>
                   <h4>Play Now</h4>
                 </Col>
-                <Col lg={3} md={4} sm={6}>
+                <Col lg={3} md={4} sm={6} className='d-flex justify-content-evenly' >
                   <Image src={e.image} alt="" className="img-fluid img p-3" />
                 </Col>
               </Row>
