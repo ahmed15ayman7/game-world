@@ -25,12 +25,14 @@ let handelKeyEvent=(e:React.KeyboardEvent)=>{
    if(key==='ArrowUp'){
     index!==0 ? setIndex((count+result.length-1)%result.length):null
        count!==0?setCount(count-1):null;
+       e.preventDefault();
        
     }
     if(key==='ArrowDown'){
         index!==result.length ? setIndex((count+1)%result.length): null
         count!==result.length?setCount(count+1):null;
         
+        e.preventDefault();
 }
     if(key==='Enter'){
         router.push('/games/'+result[count].id)
