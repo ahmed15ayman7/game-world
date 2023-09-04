@@ -51,7 +51,7 @@ let handelKeyEvent=(e:React.KeyboardEvent)=>{
         />
         <div className="results rounded-1 d-flex" ref={first}>
             {result.map((e,i)=>
-            <div key={i}  onClick={()=>router.push('/games/'+e.id)}  className={`item-result mb-1 ${i===index?'active':''}`} >
+            <div key={i}  onClick={()=>router.push('/games/'+e.id)} style={{cursor:'pointer'}}  className={`item-result mb-1 ${i===index?'active':''}`} >
                 <Image src={e.image} alt=''  className="rounded-1"/>
                 <h6 className="w-75 text-center text-black">{e.title.slice(0,40)}</h6>
             </div>
